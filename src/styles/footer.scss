@@ -1,0 +1,21 @@
+.footer {
+@import '_variables';
+    
+	
+
+  &__container {
+    background-color:$second-primary-color;
+    display: inline-block;
+	margin:0px;
+	padding-top:45px;
+	width: 1400px;
+	height:160px;
+  }
+ 
+	&_title {
+			text-align: center;
+			font-family: LatoBoldItalic;
+			font-size: 36px;
+			color: #4f5ca6; 
+		}
+}
