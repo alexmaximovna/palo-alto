@@ -1,0 +1,26 @@
+{% for item in articles %}				
+					<article class="article">
+                      
+						<header>
+							<div class="article__date">{{item.date}}</div>
+							<h2 class="article__heading">{{item.header}}</h2>
+							<a href="#" class="article__tag"><span>{{item.tag}}</span></a>
+						</header>
+
+					    <p class="article__text">{{item.text}}</p>
+					    <span><a>READ MORE</a></span>
+					    <span><a>{{item.hashtags}}</a></span>
+						{% for item in item.headimage -%}
+                              <a href="#"><img  class="picture" srcset="{{item.img}} 1x, {{item.img2x}}"  alt="{{item.alt}}"></a>
+                          {%- endfor %}
+
+                        <div class="article__date">{{item.date}}</div>
+						<h2 class="article__heading">{{item.header}}</h2>
+						<a href="#" class="article__tag"><span>{{item.tag}}</span></a>  
+                        <p class="article__text">{{item.text}}</p>
+					    <span><a>READ MORE</a></span>  
+						<span><a>{{item.hashtags}}</a></span>
+
+						
+					</article>
+{% endfor %}
