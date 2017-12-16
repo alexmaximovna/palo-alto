@@ -5,8 +5,11 @@ To run the sample, follow these steps:
 
 1. Install nvm:
 $ sudo apt-get install build-essential libssl-dev
+
 $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+
 $ source ~/.profile
+
 View the list of available versions:
 
 $ nvm ls-remote
