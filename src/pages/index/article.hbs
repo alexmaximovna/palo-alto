@@ -1,0 +1,116 @@
+{{#> layout/base }}
+{{#*inline "main-block"}}
+{{ #each articles }}				
+	<article class="article">
+	{{this}}
+	        <div class = "article-content">
+
+		     {{#each themes}}
+            <div class = "article-content__themes">{{this}}</div>
+             {{/each}}
+
+             {{#each date}}
+            <div class = "article__date">{{this}} </div>
+             {{/each}}
+
+             {{#each title}}
+            <div class = "article-content__title">{{this}}</div>
+             {{/each}}
+
+            <div class="divider"></div>
+
+             {{#each text}}
+            <div class = "article-content__text">{{this}}</div>
+            {{/each}}
+
+            <div class="read-more">
+                <a class = "read-more" href="#" target="" > READ MORE</a>
+            </div>
+             
+             {{#each hashtags}}
+             <div class = "article-content__hashtags">
+                <a class = "article-content__hashtag" href="#" target="">
+                    {{this}}
+                </a>
+                <a class = "article-content__hashtag" href="#" target="">
+                    {{this}}
+                </a>
+                <a class = "article-content__hashtag" href="#" target="">
+                    {{this}}
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </article>
+
+	{{ #each articles }}
+	<article class="article">
+	{{this}}
+
+            {{ #each image}}
+			<div class = "article-content__image">
+            <img srcset="./images/{{this}}, ./images/{{this}}"  alt="Hills" width="100%" height="100%">
+            {{/each}}
+
+
+	        <div class = "article-content">
+
+		     {{#each themes}}
+            <div class = "article-content__themes">{{this}}</div>
+             {{/each}}
+
+             {{#each date}}
+            <div class = "article__date">{{this}} </div>
+             {{/each}}
+
+             {{#each title}}
+            <div class = "article-content__title">{{this}}</div>
+             {{/each}}
+
+            <div class="divider"></div>
+
+             {{#each add}}
+            <div class = "article-content__text article-content__text_add">
+                {{this}}
+            </div>
+            {{/each}}
+
+            {{#each text}}
+            <div class = "article-content__text">
+                {{this}}
+            </div>
+            {{/each}}
+
+            {{#each text}}
+            <div class = "article-content__text">
+               {{this}}
+            </div>
+            {{/each}
+
+            <div class="read-more">
+                <a class = "read-more" href="#" target="" > READ MORE</a>
+            </div>
+            
+             {{#each hashtags}}
+             <div class = "article-content__hashtags">
+                <a class = "article-content__hashtag" href="#" target="">
+                    {{this}}
+                </a>
+                <a class = "article-content__hashtag" href="#" target="">
+                    {{this}}
+                </a>
+                <a class = "article-content__hashtag" href="#" target="">
+                    {{this}}
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </article>
+
+
+
+
+
+{{/each}}
+{{/inline}}
+{{/layout/base }}

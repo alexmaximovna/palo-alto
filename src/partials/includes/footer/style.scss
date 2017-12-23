@@ -8,8 +8,7 @@
 	display:inline-block;
 	margin-left:630px;
 	margin-bottom:58px;
-	
-	wigth:157px;
+	width:157px;
 	}
 	&__nav {
 	text-transform: uppercase;
@@ -83,14 +82,81 @@ a{
 	
 }
 .search-footer{
-	background: url(../images/search2.png);
-	height: 25px;
-    width: 25px;
+	background: url(./images/search2.png);
+	width: 15px;
+	height: 15px;
+
+	background-repeat: no-repeat;
 
 
-    &:hover{
+   /* &:hover{
     background: url(../images/search2.png)
+    }*/
+
+}
+.social-networks {
+	margin-left: 600px;
+    &__icon {
+        display: inline-block;
+        background-image: url(./images/social.png);
+
+        width: 20px;
+        height: 20px;
+        margin: 37px 5px;
+
+        
+        background-size: 158px 20px;
+       
+        &_pinterest {
+            background-position: -139px 0;
+        }
+
+        &_instagram {
+            background-position: -93px 0;
+        }
+
+        &_twitter {
+            background-position: -46px 0;
+        }
+
+        &_facebook {
+            background-position: 0 0;
+        }
     }
+}
+
+@media (max-width: 767px) {
+	.footer {
+	
+	
+	&__logo {
+	
+	margin-left:400px;
+	}
+	
+	
+	&__text{
+	margin-top:20px;
+	color:#9da6d9;
+	text-align:center;
+	font:400 13px/23px Lato;
+	}
+
+	&__developers {
+	text-decoration: none;
+	color: #ffffff;
+	font: 700 14px / 30px Lato, serif;
+	}
+
+	&__developers:hover {
+	text-decoration: underline;
+	}
+
+	&__content {
+   width: 150px;
+	}
+
+}
 
 }
 
